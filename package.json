@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start":"cd Backend & npm start",
-    "build":"tsc",
+    "start:fronend":"cd Frontend& npm run dev",
+    "build":"npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:frontend":"cd Frontend & npm run dev"
   },
