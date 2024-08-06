@@ -1,22 +1,21 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 
 import {
   Badge,
   Box,
-  Container,
   Divider,
   Grid,
   Group,
   Image,
   Text,
-  Title,
+  Title
 } from "@mantine/core";
-import noImageFound from "./../../../../../public/no-img-found.png";
 import { format, parseISO } from "date-fns";
 import { IBooks } from "../../utility/models/books.model";
 import { useGetBookByIdQuery } from "../../utility/services/books.service";
+import noImageFound from "./../../../../../public/no-img-found.png";
 
 function BookDetails() {
   const { id } = useParams();

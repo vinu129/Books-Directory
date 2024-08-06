@@ -20,7 +20,6 @@ import { IBooks } from "../../utility/models/books.model";
 import PaginationUI from "../../../../shared/component/PaginationUI";
 import { useGetBooksQuery, useGetFilterDropdownDataQuery } from "../../utility/services/books.service";
 import SkeletonView from "../Skeleton/SkeletonView";
-import { useMediaQuery } from "@mantine/hooks";
 
 function Bookdirectory() {
   const [currentPage, setCurrentPage] = useState<number>(1);

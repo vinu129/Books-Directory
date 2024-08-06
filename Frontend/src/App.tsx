@@ -1,4 +1,4 @@
-import { Box, Flex } from "@mantine/core";
+import { Flex } from "@mantine/core";
 import { Outlet } from "react-router-dom";
 import { Header } from "./core/component/Header/Header";
 
