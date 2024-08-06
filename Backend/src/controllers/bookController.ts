@@ -28,13 +28,13 @@ export const getAllBooks = async (req: any, res: any) => {
 
       res.status(200).json({
         status: "success",
-        results: totalSearchResults,
+        totalCount: totalSearchResults,
         data: { books: searchResult },
       });
     } else {
       res.status(200).json({
         status: "success",
-        results: totalSearchResults,
+        totalCount: totalSearchResults,
         data: { books },
       });
     }
@@ -154,7 +154,7 @@ export const filterBooks = async (req: any, res: any) => {
       status: "success",
       data: status,
     });
-  } catch (err: any) {
+  } catch (err: any) {                                                     
     res.status(404).json({
       status: "fail",
       message: err.message,
