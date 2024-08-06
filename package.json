@@ -1,0 +1,15 @@
+{
+  "name": "booksdirectory-app",
+  "version": "1.0.0",
+  "description": "Books Directory Application",
+  "main": "index.js",
+  "scripts": {
+    "start":"cd Backend & npm start",
+    "build":"tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:frontend":"cd Frontend & npm run dev"
+  },
+  "author": "Vinay Chudasama",
+  "license": "ISC",
+  "dependencies": {}
+}
