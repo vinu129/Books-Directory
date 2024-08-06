@@ -20,6 +20,7 @@ import { IBooks } from "../../utility/models/books.model";
 import PaginationUI from "../../../../shared/component/PaginationUI";
 import { useGetBooksQuery, useGetFilterDropdownDataQuery } from "../../utility/services/books.service";
 import SkeletonView from "../Skeleton/SkeletonView";
+import { useMediaQuery } from "@mantine/hooks";
 
 function Bookdirectory() {
   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -44,6 +45,7 @@ function Bookdirectory() {
   const [statusData, setStatusData] = useState<string[]>([]);
   const [categoryData, setCategoryData] = useState<string[]>([]);
   const [authorData, setAuthorData] = useState<string[]>([]);
+
 
   const handleSearch = (searchValue: string) => {
     setSearchText(searchValue);
@@ -81,7 +83,8 @@ function Bookdirectory() {
   }, [filterDropdownData]);
 
   return (
-    <Flex h={"100%"} mb={20} direction={"column"} align={"center"}>
+    <>
+   
       <Flex gap={10} w={"100%"} mb={10} align={"center"} justify={"flex-end"}>
         <Select
           placeholder="Select Status"
@@ -171,7 +174,8 @@ function Bookdirectory() {
           totalPages={totalPages}
         />
       )}
-    </Flex>
+
+    </>
   );
 }
 

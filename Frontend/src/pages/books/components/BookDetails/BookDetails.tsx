@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 
 import {
   Badge,
+  Box,
   Container,
   Divider,
   Grid,
@@ -28,7 +29,7 @@ function BookDetails() {
     }
   }, [bookDetails, bookData]);
   return (
-    <Container>
+    <Box>
       <Grid p={22} style={{ borderRadius: "8px" }} bg={"white"}>
         <Grid.Col span={5}>
           {/* <Flex h={"100%"} align={"flex-start"} justify={"center"}> */}
@@ -93,7 +94,7 @@ function BookDetails() {
           </Group>
         </Grid.Col>
       </Grid>
-    </Container>
+    </Box>
   );
 }
 

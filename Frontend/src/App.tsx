@@ -11,9 +11,9 @@ function App() {
     >
       <Header />
 
-      <Box p={20} style={{ height: "100%", overflow: "auto" }}>
+      <Flex direction={'column'} align={'center'} p={20} h={"100%"} style={{overflow: "auto" }}>
         <Outlet />
-      </Box>
+      </Flex>
     </Flex>
   );
 }

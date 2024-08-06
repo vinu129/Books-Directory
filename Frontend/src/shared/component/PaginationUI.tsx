@@ -16,7 +16,6 @@ function PaginationUI({ setCurrentPage, currentPage, totalPages }: IProps) {
   return (
     <Pagination
       mt={"auto"}
-      mb={20}
       size={"lg"}
       withEdges
       total={totalPages}
