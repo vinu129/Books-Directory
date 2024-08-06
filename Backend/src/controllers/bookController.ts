@@ -148,7 +148,7 @@ export const filterBooks = async (req: any, res: any) => {
         },
       },
     ]);
-    console.log(status);
+
 
     res.status(200).json({
       status: "success",

@@ -32,7 +32,6 @@ function Favorite() {
       setBooksData(BookdirectoryData.data.books);
       setTotalPages(Math.ceil(BookdirectoryData?.totalCount / itemsPerPage));
     }
-    console.log(booksData, BookdirectoryData);
   }, [BookdirectoryData, booksData]);
   return (
     <Flex h={"100%"} mb={20} direction={"column"} align={"center"}>

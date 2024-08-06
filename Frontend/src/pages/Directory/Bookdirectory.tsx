@@ -70,8 +70,6 @@ function Bookdirectory() {
     if (BookdirectoryData) {
       setBooksData(BookdirectoryData.data.books);
       setTotalPages(Math.ceil(BookdirectoryData.totalCount / itemsPerPage));
-      console.log(BookdirectoryData);
-      
     }
   }, [BookdirectoryData]);
 
@@ -148,7 +146,7 @@ function Bookdirectory() {
                 key={book._id}
                 to={`book-details/${book._id}`}
               >
-              
+
                 <CardUI data={book} />
               </Link>
             ))}
